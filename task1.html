@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task 1</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="wrapper">
+        <div class="item">
+            <h3><span>Task 1</span>Используя замыкания, создайте функцию, генерирующую ссылки для меню сайта с переходом на товары.</h3>
+            <a href="index.html">Назад</a>
+        </div>
+    </div>
+    <script src="./js/script.js"></script>
+    <script>
+        const createPCLink = create('pc')
+        const createNotebooksLink = create('notebooks')
+        const createMonitorLink = create('monitors')
+        console.log(createPCLink(1001));
+        console.log(createNotebooksLink(4004));
+        console.log(createMonitorLink(345));
+    </script>
+</body>
+</html>

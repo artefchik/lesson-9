@@ -14,6 +14,7 @@ a {
     background-color: rgba(95, 151, 179, 0.713);
     align-items: center;
     justify-content: center;
+    color: #fff;
 }
 .links {
     display: flex;
@@ -22,5 +23,27 @@ a {
 }
 .link {
     font-size: 2rem;
+}
+
+.item {
+    text-align: center;
+}
+.item h3 span {
+    display: block;
+    margin-bottom: 0.9rem;
+}
+.item h3 {
+    margin-bottom: 1.8rem;
+    font-size: 2rem;
+}
+.item a {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 2rem;
+    padding: 0px 3rem;
+    background-color: #77608d;
+    font-size: 1.5rem;
+    border-radius: 0.4rem;
     color: #fff;
 }
