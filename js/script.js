@@ -25,10 +25,11 @@ const orders = [
     },
 ];
 
-orders.forEach((order) => {
-    calcOrder.call(order);
-});
 
 function calcOrder() {
     console.log(`Заказ ${this.tovar} покупателя ${this.fio} составил ${this.price * this.quantity}`);
+}
+
+function calcWithDiscount(discount) {
+    console.log(`Заказ ${this.tovar} покупателя ${this.fio} со скидкой ${discount} составил ${this.price * this.quantity - this.price * this.quantity * (discount / 100)} ` );
 }

@@ -3,14 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Task 2</title>
+    <title>Task 3</title>
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
     <div class="wrapper">
         <div class="item">
-            <h3><span>Task 2</span>Вам предоставлен массив объектов с данными о заказах товаров. Напишите функцию, которая выводит в консоль сумму
-                заказа, название товара и фио клиента. Объединять заказы одних и тех же покупателей не нужно.</h3>
+            <h3><span>Task 3</span>Добавьте к предыдущей задаче возможность отправлять размер скидки в процентах.</h3>
             <a href="index.html">Назад</a>
         </div>
     </div>
@@ -18,6 +17,7 @@
     <script>
         orders.forEach((order) => {
             calcOrder.call(order);
+            calcWithDiscount.call(order, 10)
         });
     </script>
 </body>
