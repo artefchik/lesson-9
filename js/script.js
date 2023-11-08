@@ -25,11 +25,21 @@ const orders = [
     },
 ];
 
-
 function calcOrder() {
     console.log(`Заказ ${this.tovar} покупателя ${this.fio} составил ${this.price * this.quantity}`);
 }
 
 function calcWithDiscount(discount) {
-    console.log(`Заказ ${this.tovar} покупателя ${this.fio} со скидкой ${discount} составил ${this.price * this.quantity - this.price * this.quantity * (discount / 100)} ` );
+    console.log(
+        `Заказ ${this.tovar} покупателя ${this.fio} со скидкой ${discount} составил ${
+            this.price * this.quantity - this.price * this.quantity * (discount / 100)
+        } `
+    );
+}
+
+function Menu(...navList) {
+    this.navList = navList;
+    this.wrapperA = function (array) {
+        return this.navList.map((elem, index) => `<a href='${elem}'>${array[index]}</a>`);
+    };
 }

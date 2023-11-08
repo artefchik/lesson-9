@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task 4</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="wrapper">
+        <div class="item">
+            <h3><span>Task 4</span>Изменить код метода wrapperA таким образом, чтобы добавлялся анкор (текст) ссылки. Текст передавать массивом. </h3>
+            <a href="index.html">Назад</a>
+        </div>
+    </div>
+    <script src="./js/script.js"></script>
+    <script>
+        const mainMenu = new Menu('home.html', 'services.html', 'price.html', 'about.html');
+        const arrayTitle = ['text 1', 'text 2', 'text 3', 'text 4'];
+        mainMenu.wrapperA(arrayTitle).forEach((elem) => console.log(elem));
+    </script>
+</body>
+</html>
